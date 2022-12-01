@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineTec</title>
+    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="preload" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="logo">
+        </a>
+        <h1>CineTec</h1>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace " href="index.html">Inicio</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html"> Volver</a>
+        
+    </nav>
+
+    <main class="contenedor">
+
+        <div class="formu">
+                <form action="Ctrlusuario.php" method="post">
+                    <h1>INICIAR SESÍON</h1> 
+                    <h3>CORREO ELECTRONICO</h3>
+                    <input type="email" name="correo" placeholder="" required> <br> <br>
+                    <h3>CONTRASEÑA</h3>
+                    <input type="password" name="password" placeholder="" required> <br> <br>
+                    <input type="submit" name="opcion" value="Aceptar">
+                    <br><br> <hr class="solid"><br>
+                    
+                    <a href="tipo_usuario.html"> <input id="crear"  name="enviar" value="CREAR CUENTA"> </a>
+                </form>
+                </form>
+            </div>
+        </div>
+    </main>
+      
+      <footer class="footer">
+        <p class="footer__texto">Equipo Trabajo Esmeralda - Todos los derechos Reservados 2022.</p>
+    </footer>
+
+</body>
+</html>

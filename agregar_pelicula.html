@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineTec</title>
+    <script src="https://kit.fontawesome.com/a7b63346b3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="preload" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="logo">
+        </a>
+        <h1>CineTec</h1>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace " href="empleado.html">Inicio</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" > Pelicula</a>
+        <a class="navegacion__enlace" href="mantener_pelicula.html"> Volver</a>
+        
+    </nav>
+
+    <main class="contenedor">
+        <h1>Pelicula</h1>
+
+        <div class="formu">
+            <form action="CtrlPelicula.php" method="post">
+                <h2>Agregar Pelicula</h2>
+                <br>
+                <input  type="text" name="titulo" id="titulo" requiered placeholder="Titulo">
+                <br>
+                <input  type="number" name="duracion" id="duracion"placeholder="duracion" requiered>
+                <br>
+                <input type="date" name="fecha_exibicion" placeholder="Fecha de exibicion" requiered>
+                <br>
+                <input type="text" name="sinopsis" id="Sinopsis" placeholder="Sinopsis" requiered>
+                <br>
+                <input type="text" type="text" name="estatus" id="estatus" placeholder="estatus" requiered>
+                <br>
+                <input  name="imagen" id="imagen"  requiered type="file">
+                <br>
+                <input id=registrar name="opcion" type="submit" value="Registrar"> 
+                <input id=cancelar type="reset" onclick="alert('¿Estas seguro de Cancelar?')"value="Cancelar">
+            </form>
+                
+
+            </table>
+        </div>
+    </main>
+      
+      <footer class="footer">
+        <p class="footer__texto">Equipo Trabajo Esmeralda - Todos los derechos Reservados 2022.</p>
+    </footer>
+
+</body>
+</html>
